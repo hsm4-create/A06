@@ -1,0 +1,63 @@
+/* Step 31: Define the CSS Variable for the accent color */
+:root {
+    --accent-color: #800000;
+}
+
+/* Step 5: Base body styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+/* Step 6 & 32: Italicize links and set color on hover/focus using variable */
+a:hover, a:focus {
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+/* Step 7: Main section header size */
+h1 {
+    font-size: 150%;
+}
+
+/* Step 8 & 32: Section headers color and size */
+h2 {
+    font-size: 130%;
+    color: var(--accent-color);
+}
+
+/* Step 9: Default subheadings size */
+h3 {
+    font-size: 105%;
+}
+
+/* Step 11-14: Header element layout and nested targeting styles */
+header h2 {
+    font-size: 170%;
+    text-indent: 30px;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    text-indent: 30px;
+}
+
+header img {
+    float: left;
+}
+
+/* Step 18: Float clearing behavior for the main structural content */
+main {
+    clear: left;
+}
+
+/* Step 21: Footer paragraph alignments */
+footer p {
+    text-align: center;
+}
+
+/* Step 29: Class custom scale rule */
+.large {
+    font-size: 125%;
+}
